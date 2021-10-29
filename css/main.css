@@ -1,0 +1,411 @@
+* {
+    color: black;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+input:invalid {
+    box-shadow:none;
+ }
+body{
+    margin: 0px;
+    background-color: white;
+    height: 100%;
+
+}
+header{
+    max-height: 80vh;
+    display: block;
+    margin-bottom: 3vh;
+}
+header nav{
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 8px 25px;
+    background-color: rgb(243, 243, 243);
+}
+header nav span{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header nav span img{
+    width: 42px;
+    height: 42px;
+    margin-right: 7px;
+}
+header nav h2 a{
+    color: rgb(40, 108, 255);
+    font-size: 30px;
+}
+.search-section{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+/*Styling images for the bg in search*/
+.search-section .bg-image-search{
+    display: flex;
+    -moz-box-pack: justify;
+    -moz-box-align: center;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.search-section .bg-image-search .left-image-bg{
+    width: auto;
+    height: auto;   
+    float: left;
+}
+.search-section .bg-image-search .right-image-bg{
+    height: auto;
+    width: auto;
+}
+.search-section .bg-image-search .left-image-bg img{
+    max-width: 37vw;
+    max-height: 60vh;
+
+}
+.search-section .bg-image-search .right-image-bg img{
+    max-width: 37vw;
+    max-height: 60vh;
+}
+
+
+/*st1yling the center search input*/
+header .search-section{
+    box-shadow: rgba(34, 90, 89, 0.1) 5px 10px 50px;
+}
+header .search-section .search-box-area{
+    position: absolute;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    z-index: 2;
+}
+.search-box-area .search-intro-text{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.nav-search-section .search-box{
+    position: relative;
+    background: #a3adc2dc;
+    height: 45px;
+    min-width: 40vw;
+    border-radius: 20px;
+    padding: 5px;
+    margin: auto;
+}
+.nav-search-section .search-box .search-btn{
+    color: white;
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #596B9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-search-section .search-box .search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    margin-left: 20px;
+    color: black;
+    transition: 0.4s;
+    line-height: 35px;
+    font-size: 15px;
+    width: 60%;
+}
+
+/*Styling topics sections*/
+.topic-section, .known-issues, .popular-topics {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topic-section h2 , .known-issues h2, .popular-topics h2{
+    font-size: 40px;
+    font-weight: 650;
+    text-align: center;
+}
+.topic-section .cards-section{
+    padding-bottom: 5vh;
+    max-height: 908px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.topic-section .cards-section .card{
+    order: 1;
+    display: block;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 35px;
+    padding-left: 32px;
+    margin-top: 32px;
+    margin-right: 16px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    box-sizing: border-box;
+    width: calc(50% 16px);
+    box-shadow: rgba(34, 90, 89, 0.2) 2px 4px 20px;
+    border-radius: 8px;
+}
+
+.card-heading{
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 3vh;
+}
+.card-heading .heading-text{
+    font-size: 25px;
+    max-width: calc(100% - 96px);
+    overflow-wrap: break-word;
+}
+.card-heading img{
+    width: 40px;
+    height: 40px;
+}
+.cards-section .card ul li span a{
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 5vh;
+    color: grey;
+}
+.cards-section .card ul li span a:hover{
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+/* Section known issues*/
+.known-issues{
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+
+}
+.known-issues p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+/*Styling for te footer*/
+footer{
+    position: relative;
+    display: block;
+    min-height: 20vh;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    padding: 5vh 7vw;
+}
+footer .footer-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+}
+footer .footer-details .footer-logo-text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+footer .footer-details .footer-copyright{
+    margin-bottom: 1px;
+}
+.footer-details div span a{
+    text-decoration: underline;
+}
+
+
+
+/* Styling for mobile responsiveness*/
+@media only screen and (max-width: 1060px){
+    .topic-section .cards-section{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .topic-section, .known-issues, .popular-topics {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 960px){
+    .card-heading .heading-text{
+        font-size: 23px;
+        max-width: calc(100% - 100px);
+    }
+}
+@media only screen and (max-width: 920px){
+    .topic-section .cards-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .topic-section .cards-section .card{
+        padding-top: 40px;
+        padding-right: 32px;
+        padding-bottom: 40px;
+        padding-left: 32px;
+        margin-top: 32px;
+        margin-right: 16px;
+        margin-bottom: 0px;
+        margin-left: 16px;
+        box-sizing: border-box;
+        width: calc(50% -16px);
+
+    }
+}
+@media only screen and (max-width: 900px){
+    .search-section .bg-image-search .left-image-bg img{
+        max-width: 45vw;
+        height: auto;
+    
+    }
+    .search-section .bg-image-search .right-image-bg img{
+        max-width: 45vw;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 830px){
+    .topic-section .cards-section{
+        display: inline;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .nav-search-section .search-box{
+        min-width: 10vw;
+        margin: 0 15px 0 15px;
+    }
+    .topic-section h2 , .known-issues h2, .popular-topics h2{
+        font-size: 30px;
+    }
+    header nav h2 a{
+        color: rgb(40, 108, 255);
+        font-size: 20px;
+    }
+    header nav span img{
+        width: 29px;
+        height: 29px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .search-box-area .search-intro-text{
+        font-size: 40px;
+        margin: 0 10px 0 10px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .search-box-area .search-intro-text{
+        font-size: 30px;    
+    }
+    .search-section{
+        height: 35vh;
+    }
+    .search-section .bg-image-search .left-image-bg img{
+        width: auto;
+        height: 30vh;
+    
+    }
+    .search-section .bg-image-search .right-image-bg img{
+        width: auto;
+        height: 30vh;
+    }
+    footer .footer-details .footer-logo-text{
+        font-size: 20px;
+        
+    }
+    footer .footer-copyright p{
+        font-size: smaller;
+    }
+    footer .footer-details div span a{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 400px){
+    .cards-section .card ul li span a{
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 4vh;
+    }
+    .card-heading .heading-text a{
+        font-size: 23px;        
+    }
+    .topic-section .cards-section .card{        
+        padding-right: 22px;
+        padding-left: 22px;
+        margin-top: 32px;
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+    .card-heading .heading-text{
+        font-size: 25px;
+        max-width: 65vw;
+        overflow-wrap: break-word;
+    }
+    .known-issues{
+        text-align: justify;
+    }
+    .search-section .bg-image-search .left-image-bg img{
+        width: auto;
+        height: 27vh;
+    
+    }
+    .search-section .bg-image-search .right-image-bg img{
+        width: auto;
+        height: 25vh;
+    }
+    header nav span img{
+        width: 27px;
+        height: 27px;
+        margin-right: 7px;
+    }
+    header nav h2 a{
+        color: rgb(40, 108, 255);
+        font-size: 20px;
+    }
+    header nav h3{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,210 @@
+* {
+    color: black;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    
+}
+header nav{
+    background-color: rgb(243, 243, 243);
+}
+/* heading formating*/
+.h3-heading{
+    font-size: larger;
+}
+div > h5 > span > a{
+    font-size: 17px;
+    color: grey;
+    letter-spacing: 0.5px;
+    transition: 0.1s ease-in-out;
+}
+div > h5 > span > a:hover{
+    font-size: 17px;
+    color: rgb(43, 43, 43);
+}
+.side-nav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+}
+
+.header{
+    width: auto;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    background-color: transparent;
+    max-height: 86px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.side-nav li{
+    padding: 0px 40px 40px 0px;
+}
+
+.center-text-icon {
+    align-items: flex-start;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.center-text-icon img{
+    margin: auto 0;
+    transition: 0.3s ease-in-out;
+}
+.side-nav > .drop-down-header{
+    align-items: flex-start;
+    padding: 15px 15px 10px;
+    width: auto;
+}
+.side-nav .side-nav-topic{
+    display: flex;
+    cursor: pointer;
+}
+.side-nav .drop-down-icon{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.side-nav .drop-down-main-list{
+    text-align: left;
+}
+.side-nav .drop-down-main-list .drop-down-topic{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.side-nav .drop-down-main-list .drop-down-topic .drop-down-topic-list{
+    padding: 15px 15px 10px;
+    align-items: flex-start;
+    
+}
+.drop-down-topic .sub-topic-list{
+    text-align: left;
+}
+
+.drop-down-topic .sub-topic-list .sub-topic-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.drop-down-topic .sub-topic-list .sub-topic-item > li{
+    margin-left: 18px !important;
+    padding: 5px 16px !important;
+}
+
+.sub-topic-item .sub-topic-item-child li{
+    align-items: flex-start;
+    margin-left: 38px !important;
+    padding-bottom: 5px;
+    padding-left: 23px;
+}
+.push-bottom{
+    margin-bottom: 0.5vh;
+}
+.hr{
+    padding: 0px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.11);
+}
+
+/*Aside nav structure*/
+
+/*Toggling the list drop down*/
+.drop-down-topic .sub-topic-list{
+    display: none ;
+}
+.drop-down-main-list{
+    display: none ;
+}
+.active-display{
+    display: block ;
+}
+.active-display1{
+    display: block ;
+}
+
+
+
+/*Popular topics section*/
+body .popular-topics{
+    margin-top: 5vh;
+}
+.popular-topics .topics-card-group{
+    max-width: 90vw;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+.popular-topics .topics-card-group .card{
+    padding: 24px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    width: calc(50% - 16px);
+    box-shadow: rgba(34, 90, 89, 0.2) 2px 4px 20px;
+    border-radius: 8px;
+}
+.article-path nav div span p{
+    color: gray;
+    font-weight: 600;
+}
+.search-results-section{
+    max-width: 90vw;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+.search-results-section .card-search{
+    padding: 24px;
+    margin: 10px 0 15px 0;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: rgba(34, 90, 89, 0.2) 2px 4px 20px;
+    border-radius: 8px;
+}
+.search-card-txt{
+    display: inline;
+}
+.search-card-txt p{
+    color: gray;
+}
+
+footer{
+    position: relative;
+}
+
+/*Responsive mobile ui*/
+@media only screen and (max-width : 1080px){
+    .popular-topics .topics-card-group .card{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 420px){
+    .h3-heading{
+        font-size: smaller;
+    }
+    div > h5 > span > a{
+        font-size: 14px;
+    }
+}
+/*finding overflow*/
